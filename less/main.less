@@ -1,0 +1,339 @@
+@import "variables.less";
+@import "mixins.less";
+// Global Components
+
+html {
+  font-size: 10px;
+  background-color: black;
+}
+
+body {
+  background-color: black;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: @text-color;
+  margin: 0;
+  padding: 0;
+  min-width: 870px;
+  .body-font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h1, h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+.text-muted {
+  color: @gray;
+}
+
+.text-primary {
+  color: @brand-primary;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.75;
+}
+
+p.large {
+  font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  outline: none;
+}
+
+a {
+  color: @brand-primary;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: darken(@brand-primary, 10%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  .heading-font;
+  font-weight: 700;
+}
+
+.img-centered {
+  margin: 0 auto;
+}
+
+.centered {
+  text-align: center;
+}
+
+.bg-light-gray {
+  background-color: @gray-lighter;
+}
+
+.bg-darkest-gray {
+  background-color: @gray-darkest;
+}
+
+// Restyled Primary Buttons
+
+.btn-primary {
+  .button-variant(@gray-darkest; @brand-primary; @brand-primary);
+  .heading-font;
+  font-weight: 700;
+}
+
+.btn-xl {
+  .button-variant(@gray-darkest; @brand-primary; @brand-primary);
+  .heading-font;
+  font-weight: 700;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
+// Custom Navigation Bar
+
+
+.navbar {
+  background-color: @gray-darkest;
+  position: relative;
+  padding: 10px 25px;
+  text-align: center;
+  .navbar-title {
+    display: inline;
+    color:@brand-primary;
+    height: 50px;
+    font-family: 'Lato', sans-serif;
+    text-transform: capitalize;
+
+    box-shadow: inset 0 -1px 0 @brand-primary, inset 0 -1px 0 @brand-primary
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: block;
+    li {
+      display: inline-block;
+      a {
+        text-decoration: none;
+        .heading-font;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color: white;
+        display: block;
+        padding: 10px 15px;
+        &:hover,
+        &:focus {
+          color: @brand-primary;
+          outline: none;
+        }
+      }
+    }
+    li.active > a {
+      border-radius: 3px;
+      color: black;
+
+      background-color: @brand-primary;
+    }
+    li.active > a:hover,
+    li.active > a:focus {
+      color: black;
+      background-color: darken(@brand-primary, 10%);
+    }
+  }
+}
+
+header {
+  clear: both;
+  text-align: center;
+  background-image: url('../images/nuoto3.jpg');
+  background-repeat:  no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+
+  position: relative;
+
+  height: 350px;
+  .background-cover;
+  div {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    h1, h2 {
+      color: @brand-primary;
+      font-size: 52px;
+      margin: 0;
+      padding: 0;
+      text-transform: none;
+      font-family: 'Lato', sans-serif;
+      text-shadow: 2px 0 0 #111, -2px 0 0 #111, 0 2px 0 #111, 0 -2px 0 #111, 1px 1px #111, -1px -1px 0 #111, 1px -1px 0 #000000, -1px 1px 0 #000;
+      //text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    }
+    h2 {
+      font-size: 36px;
+    }
+    img {
+      width: 80%;
+      max-width: 800px;
+    }
+  }
+}
+
+
+#container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  background-color: black;
+}
+
+#newspanel {
+  width: 70%;
+  display: inline-block;
+  .homepage-news {
+    h2 {
+      margin-bottom: 0;
+    }
+    p.news-content {
+      font-size: 1.1em;
+      margin: .5em 0;
+    }
+    p.date {
+      display: inline-block;
+      margin: 0;
+      font-size: .9em;
+    }
+    a {
+      text-decoration: underline;
+      margin: 0 .2em;
+    }
+
+    a.readmore {
+      font-size: .7em;
+    }
+  }
+}
+
+#sponsorpanel {
+  float: right;
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+}
+
+footer{
+  text-align: center;
+  clear: both;
+}
+
+
+section, aside {
+  padding: 25px 0;
+  background-color: @background-color;
+  h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  h3.section-subheading {
+    font-size: 16px;
+    .serif-font;
+    text-transform: none;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 75px;
+  }
+
+}
+
+#tabellagare {
+  font-size: 1.2em;
+  border-collapse: collapse;
+  margin: 40px auto 0 auto;
+  width: 80%;
+
+  td{
+    padding: .3em;
+    color: #AAA;
+  }
+  .c-orario {
+    width: 25%;
+  }
+
+  .table-title {
+    margin: 0;
+  }
+
+  .row-1 {
+    background-color: #444;
+  }
+  .row-2{
+    background-color: #333;
+  }
+  .row-head{
+    background-color: #222;
+  }
+}
+
+.mappa {
+  margin-top: 20px;
+}
+
+.sponsor-list {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+  li {
+    display: inline-block;
+    margin: 20px;
+    p {
+      margin: 5px 0 0 0;
+      text-align: center;
+    }
+  }
+}
+
+
+
+
+// Highlight Color Customization
+
+::-moz-selection {
+  text-shadow: none;
+  background: @brand-primary;
+}
+
+::selection {
+  text-shadow: none;
+  background: @brand-primary;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+body {
+  webkit-tap-highlight-color: @brand-primary;
+}

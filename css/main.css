@@ -1,0 +1,377 @@
+html {
+  font-size: 10px;
+  background-color: black;
+}
+body {
+  background-color: black;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #777;
+  margin: 0;
+  padding: 0;
+  min-width: 870px;
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+h1,
+h2,
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+h1 {
+  font-size: 36px;
+}
+.text-muted {
+  color: #777;
+}
+.text-primary {
+  color: #60FF00;
+}
+p {
+  font-size: 1.1em;
+  line-height: 1.75;
+}
+p.large {
+  font-size: 16px;
+}
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  outline: none;
+}
+a {
+  color: #60FF00;
+}
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: #4dcc00;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.img-centered {
+  margin: 0 auto;
+}
+.centered {
+  text-align: center;
+}
+.bg-light-gray {
+  background-color: #f7f7f7;
+}
+.bg-darkest-gray {
+  background-color: #222;
+}
+.btn-primary {
+  color: #222;
+  background-color: #60FF00;
+  border-color: #60FF00;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #222;
+  background-color: #4dcc00;
+  border-color: #49c200;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #60FF00;
+  border-color: #60FF00;
+}
+.btn-primary .badge {
+  color: #60FF00;
+  background-color: #222;
+}
+.btn-xl {
+  color: #222;
+  background-color: #60FF00;
+  border-color: #60FF00;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 20px 40px;
+}
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+  color: #222;
+  background-color: #4dcc00;
+  border-color: #49c200;
+}
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+  background-image: none;
+}
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+  background-color: #60FF00;
+  border-color: #60FF00;
+}
+.btn-xl .badge {
+  color: #60FF00;
+  background-color: #222;
+}
+.navbar {
+  background-color: #222;
+  position: relative;
+  padding: 10px 25px;
+  text-align: center;
+}
+.navbar .navbar-title {
+  display: inline;
+  color: #60FF00;
+  height: 50px;
+  font-family: 'Lato', sans-serif;
+  text-transform: capitalize;
+  box-shadow: inset 0 -1px 0 #60FF00, inset 0 -1px 0 #60FF00;
+}
+.navbar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: block;
+}
+.navbar ul li {
+  display: inline-block;
+}
+.navbar ul li a {
+  text-decoration: none;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: white;
+  display: block;
+  padding: 10px 15px;
+}
+.navbar ul li a:hover,
+.navbar ul li a:focus {
+  color: #60FF00;
+  outline: none;
+}
+.navbar ul li.active > a {
+  border-radius: 3px;
+  color: black;
+  background-color: #60FF00;
+}
+.navbar ul li.active > a:hover,
+.navbar ul li.active > a:focus {
+  color: black;
+  background-color: #4dcc00;
+}
+header {
+  clear: both;
+  text-align: center;
+  background-image: url('../images/nuoto3.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  position: relative;
+  height: 350px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+header div {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+header div h1,
+header div h2 {
+  color: #60FF00;
+  font-size: 52px;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  font-family: 'Lato', sans-serif;
+  text-shadow: 2px 0 0 #111, -2px 0 0 #111, 0 2px 0 #111, 0 -2px 0 #111, 1px 1px #111, -1px -1px 0 #111, 1px -1px 0 #000000, -1px 1px 0 #000;
+}
+header div h2 {
+  font-size: 36px;
+}
+header div img {
+  width: 80%;
+  max-width: 800px;
+}
+#container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  background-color: black;
+}
+#newspanel {
+  width: 70%;
+  display: inline-block;
+}
+#newspanel .homepage-news h2 {
+  margin-bottom: 0;
+}
+#newspanel .homepage-news p.news-content {
+  font-size: 1.1em;
+  margin: .5em 0;
+}
+#newspanel .homepage-news p.date {
+  display: inline-block;
+  margin: 0;
+  font-size: .9em;
+}
+#newspanel .homepage-news a {
+  text-decoration: underline;
+  margin: 0 .2em;
+}
+#newspanel .homepage-news a.readmore {
+  font-size: .7em;
+}
+#sponsorpanel {
+  float: right;
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+}
+footer {
+  text-align: center;
+  clear: both;
+}
+section,
+aside {
+  padding: 25px 0;
+  background-color: #000;
+}
+section h2.section-heading,
+aside h2.section-heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+section h3.section-subheading,
+aside h3.section-subheading {
+  font-size: 16px;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 75px;
+}
+#tabellagare {
+  font-size: 1.2em;
+  border-collapse: collapse;
+  margin: 40px auto 0 auto;
+  width: 80%;
+}
+#tabellagare td {
+  padding: .3em;
+  color: #AAA;
+}
+#tabellagare .c-orario {
+  width: 25%;
+}
+#tabellagare .table-title {
+  margin: 0;
+}
+#tabellagare .row-1 {
+  background-color: #444;
+}
+#tabellagare .row-2 {
+  background-color: #333;
+}
+#tabellagare .row-head {
+  background-color: #222;
+}
+.mappa {
+  margin-top: 20px;
+}
+.sponsor-list {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+}
+.sponsor-list li {
+  display: inline-block;
+  margin: 20px;
+}
+.sponsor-list li p {
+  margin: 5px 0 0 0;
+  text-align: center;
+}
+::-moz-selection {
+  text-shadow: none;
+  background: #60FF00;
+}
+::selection {
+  text-shadow: none;
+  background: #60FF00;
+}
+img::selection {
+  background: transparent;
+}
+img::-moz-selection {
+  background: transparent;
+}
+body {
+  webkit-tap-highlight-color: #60FF00;
+}
