@@ -41,6 +41,9 @@ p {
   font-size: 1.1em;
   line-height: 1.75;
 }
+li {
+  font-size: 1.1em;
+}
 p.large {
   font-size: 16px;
 }
@@ -72,6 +75,13 @@ h6 {
 }
 .img-centered {
   margin: 0 auto;
+}
+hr {
+  background-color: #222;
+  height: 1px;
+  border: 0;
+  clear: both;
+  margin: 10px 0;
 }
 .centered {
   text-align: center;
@@ -224,7 +234,7 @@ fieldset[disabled] .btn-xl.active {
 header {
   clear: both;
   text-align: center;
-  background-image: url('../images/nuoto3.jpg');
+  background-image: url('../images/piscina-1.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -237,8 +247,9 @@ header {
 }
 header div {
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
   text-align: center;
 }
 header div h1,
@@ -342,6 +353,11 @@ aside h3.section-subheading {
 #tabellagare .row-head {
   background-color: #222;
 }
+.image-right {
+  float: right;
+  margin: 20px;
+  width: 30%;
+}
 .mappa {
   margin-top: 20px;
 }
@@ -357,6 +373,9 @@ aside h3.section-subheading {
 .sponsor-list li p {
   margin: 5px 0 0 0;
   text-align: center;
+}
+.small-list li {
+  font-size: 1em;
 }
 ::-moz-selection {
   text-shadow: none;

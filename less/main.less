@@ -46,6 +46,10 @@ p {
   line-height: 1.75;
 }
 
+li {
+  font-size: 1.1em;
+}
+
 p.large {
   font-size: 16px;
 }
@@ -78,6 +82,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
+hr { background-color: @gray-darkest; height: 1px; border: 0; clear:both; margin:10px 0;}
+
 .centered {
   text-align: center;
 }
@@ -106,6 +112,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   padding: 20px 40px;
 }
+
+
 
 // Custom Navigation Bar
 
@@ -163,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
 header {
   clear: both;
   text-align: center;
-  background-image: url('../images/nuoto3.jpg');
+  background-image: url('../images/piscina-1.jpg');
   background-repeat:  no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -174,8 +182,9 @@ header {
   .background-cover;
   div {
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     width: 100%;
+    background-color:rgba(255,255,255,0.1);
     text-align: center;
     h1, h2 {
       color: @brand-primary;
@@ -293,6 +302,13 @@ section, aside {
   }
 }
 
+
+.image-right {
+  float:right;
+  margin:20px;
+  width:30%;
+}
+
 .mappa {
   margin-top: 20px;
 }
@@ -311,6 +327,12 @@ section, aside {
   }
 }
 
+
+.small-list{
+  li {
+    font-size: 1em;  
+  }
+}
 
 
 
